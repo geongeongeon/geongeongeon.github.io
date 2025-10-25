@@ -13,6 +13,7 @@
   <meta property="og:url" content="https://geongeongeon.github.io/">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -28,7 +29,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YF0313E82"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -55,6 +56,7 @@
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Educations</span></a></li>
+          <li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a></li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
@@ -125,11 +127,12 @@
 						<ul>
 							<li><a href="#page-1">Educations</a></li>
 							<li><a href="#page-2">Certificates</a></li>
-							<li><a href="#page-3">Skills</a></li>
-							<li><a href="#page-4">Projects</a></li>
+							<!-- <li><a href="#page-3">Skills</a></li> -->
+							<li><a href="#page-3">Projects</a></li>
 						</ul>
 					</nav>
 				</div>
+
 				<div class="col-md-9" id="education-section">
 					<div id="page-1" class="page one">
 						<h2 class="heading">Education</h2>
@@ -169,7 +172,7 @@
 					</div>
 
 					<div id="page-2" class="page two">
-						<h2 class="heading">Certificates</h2>
+						<h2 class="heading" id="certificates-section">Certificates</h2>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="flaticon-ideas"></span>
@@ -222,6 +225,7 @@
 						</div>
 					</div>
 
+          <!--
 					<div id="page-3" class="page three">
 						<h2 class="heading">Skills</h2>
 						<div class="row progress-circle mb-5">
@@ -229,7 +233,6 @@
 								<div class="bg-white rounded-lg shadow p-4">
 									<h2 class="h5 font-weight-bold text-center mb-4">Java</h2>
 
-									<!-- Progress bar 1 -->
 									<div class="progress mx-auto" data-value='80'>
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
@@ -242,15 +245,12 @@
 											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
 										</div>
 									</div>
-									<!-- END -->
 								</div>
 							</div>
 
 							<div class="col-lg-4 mb-4">
 								<div class="bg-white rounded-lg shadow p-4">
 									<h2 class="h5 font-weight-bold text-center mb-4">MySql</h2>
-
-									<!-- Progress bar 1 -->
 									<div class="progress mx-auto" data-value='70'>
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
@@ -263,7 +263,6 @@
 											<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
 										</div>
 									</div>
-									<!-- END -->
 								</div>
 							</div>
 
@@ -271,7 +270,6 @@
 								<div class="bg-white rounded-lg shadow p-4">
 									<h2 class="h5 font-weight-bold text-center mb-4">JPA</h2>
 
-									<!-- Progress bar 1 -->
 									<div class="progress mx-auto" data-value='70'>
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
@@ -284,7 +282,6 @@
 											<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
 										</div>
 									</div>
-									<!-- END -->
 								</div>
 							</div>
 						</div>
@@ -336,8 +333,9 @@
 							</div>
 						</div>
 					</div>
+        -->
 
-					<div id="page-4" class="page four">
+					<div id="page-3" class="page four">
 						<h2 id="projects-section" class="heading">Projects</h2>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
@@ -347,11 +345,11 @@
 								<span class="date">2025.04 - 2025.08</span>
 								<div class="d-flex">
 									<h2>Study With</h2>
-									<div style="position: relative; top: 3px;">
+									<div style="position: relative; top: 2px;">
                     &nbsp;
-                    <a class="btn btn-outline-secondary" target="_blank" class="btn btn-outline-secondary" href="https://github.com/geongeongeon/StudyWith-backend">Github</a>
-                    &nbsp;
-                    <a class="btn btn-outline-secondary" target="_blank" href="http://www.studywith.site">Link</a>
+                    <a target="_blank" href="https://github.com/geongeongeon/StudyWith-backend" title="Github">
+                      <i class="fab fa-github"></i>
+                    </a>
 									</div>
 								</div>
 								<span class="position">스터디 매칭 플랫폼</span>
@@ -368,9 +366,11 @@
 								<span class="date">2024.12 - 2025.01</span>
 								<div class="d-flex">
 									<h2>QnA Service</h2>
-									<div style="position: relative; top: 3px;">
+									<div style="position: relative; top: 1px;">
                     &nbsp;
-                    <a class="btn btn-outline-secondary" target="_blank" class="btn btn-outline-secondary" href="https://github.com/geongeongeon/qna_service_241219">Github</a>
+                    <a target="_blank" href="https://github.com/geongeongeon/qna_service_241219" title="Github">
+                      <i class="fab fa-github"></i>
+                    </a>
 									</div>
 								</div>
 								<span class="position">질의 응답 플랫폼</span>
@@ -387,9 +387,11 @@
 								<span class="date">2023.03 - 2023.06</span>
 								<div class="d-flex">
 									<h2>대한민국 이곳저곳</h2>
-									<div style="position: relative; top: 3px;">
+									<div style="position: relative; top: 1px;">
                     &nbsp;
-                    <a class="btn btn-outline-secondary" target="_blank" class="btn btn-outline-secondary" href="https://github.com/geongeongeon/HotPlaceInKorea">Github</a>
+                    <a target="_blank" href="https://github.com/geongeongeon/HotPlaceInKorea" title="Github">
+                      <i class="fab fa-github"></i>
+                    </a>
 									</div>
 								</div>
 								<span class="position">한국 여행지 추천 어플리케이션</span>
@@ -406,9 +408,11 @@
 								<span class="date">2022.10 - 2022.12</span>
 								<div class="d-flex">
 									<h2>Walking Day</h2>
-									<div style="position: relative; top: 3px;">
+									<div style="position: relative; top: 1px;">
                     &nbsp;
-                    <a class="btn btn-outline-secondary" target="_blank" class="btn btn-outline-secondary" href="https://github.com/geongeongeon/WalkingDay">Github</a>
+                    <a target="_blank"href="https://github.com/geongeongeon/WalkingDay" title="Github">
+                      <i class="fab fa-github"></i>
+                    </a>
 									</div>
 								</div>
 								<span class="position">해피 워킹 어플리케이션</span>

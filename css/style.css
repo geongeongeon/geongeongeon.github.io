@@ -9672,3 +9672,15 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.fa-github {
+  color: gray;
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.fa-github:hover {
+  color: black;
+}
