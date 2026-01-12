@@ -1,3 +1,10 @@
+/* print 환경에서 헤더 비활성화 */
+@media print {
+  .navbar {
+    display: none !important;
+  }
+}
+
 html, body {
   font-family: 'Noto Sans KR', Arial, sans-serif;
 }
