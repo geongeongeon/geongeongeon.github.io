@@ -1,6 +1,15 @@
 /* print 환경에서 헤더 비활성화 */
 @media print {
-  .navbar {
+  #topNav, #sideNav, #projectSideNav {
+    display: none !important;
+  }
+}
+
+/* mobile 환경에서 헤더 비활성화 */
+@media (max-width: 768px) {
+  #topNav,
+  #sideNav,
+  #projectSideNav {
     display: none !important;
   }
 }
