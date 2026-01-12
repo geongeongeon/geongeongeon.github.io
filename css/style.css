@@ -1,0 +1,127 @@
+html, body {
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+}
+
+.bg-left {
+  background-color: #eef1ff;
+}
+
+.navbar {
+  height: 100px;
+  transition:
+    box-shadow 0.3s ease,
+    backdrop-filter 0.3s ease;
+}
+
+#topMainNav .nav-link {
+  position: relative;
+}
+
+#topMainNav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bs-primary);
+
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+#topMainNav .nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+#introduce, #profile, #educations, #certificates,
+#projects, #project1, #project2, #project3,
+#contact {
+  scroll-margin-top: 100px; /* navbar 높이 */
+}
+
+#sideNav, #projectSideNav {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+
+#sideNav.is-visible, #projectSideNav.is-visible{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-link {
+  color: #6c757d;
+}
+
+.bi-github {
+  color: #495057;
+  transition: color 0.3s ease;
+}
+
+.bi-github:hover {
+  color: black;
+}
+
+.section-ribbon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 50px;              /* ⭐ 기준 높이 고정 */
+  padding: 0 10px 0 24px;
+  background-color: #0d6efd;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.section-ribbon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;    /* height / 2 */
+  border-bottom: 25px solid transparent; /* height / 2 */
+  border-left: 30px solid #0d6efd;
+}
+
+#contact .card {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+}
+
+#contact a:hover .card {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  background-color: #f8f9ff;
+}
+
+#contact a:hover i {
+  transform: scale(1.1);
+}
+
+#contact i {
+  transition: transform 0.25s ease;
+}
+
+p.position-relative::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
