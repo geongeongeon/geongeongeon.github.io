@@ -1,16 +1,28 @@
-/* print 환경에서 헤더 비활성화 */
+/* print 환경에서 헤더 비활성화 & section 넓이 확대 */
 @media print {
   #topNav, #sideNav, #projectSideNav {
     display: none !important;
   }
+
+  .print-full {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
 }
 
-/* mobile 환경에서 헤더 비활성화 */
+/* mobile 환경에서 헤더 비활성화 & section 넓이 확대 */
 @media (max-width: 768px) {
   #topNav,
   #sideNav,
   #projectSideNav {
     display: none !important;
+  }
+
+  .print-full {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
 }
 
